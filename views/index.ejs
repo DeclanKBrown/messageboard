@@ -6,6 +6,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
+    <a href="/new"><button>Add New Message</button></a>
     <% messages.map((message) => { %>
       <h2><%= message.user %></h2>
       <h3><%= message.text %></h3>
