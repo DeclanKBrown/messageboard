@@ -6,6 +6,10 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% messages.map((message) => { %>
+      <h2><%= message.user %></h2>
+      <h3><%= message.text %></h3>
+      <h4><%= message.added %></h4>
+    <% }) %>
   </body>
 </html>
